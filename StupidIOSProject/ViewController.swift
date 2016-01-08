@@ -23,6 +23,10 @@ class ViewController: UIViewController {
     @IBAction func changeColorSlider(sender: UISlider) {
         view.backgroundColor = UIColor.magentaColor()
     }
+    @IBAction func randomColor(sender: UIButton) {
+        randomColorChange()
+    }
+    
     func randomColorChange()
     {
         let newRed = CGFloat(Double(arc4random_uniform(256)) / 255.000)

@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoH-Rh-mYn">
-                                <rect key="frame" x="231" y="285" width="138" height="30"/>
+                                <rect key="frame" x="138" y="292" width="138" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.1788684449951532" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Change the Color">
                                     <color key="titleColor" red="1" green="0.5975486526257705" blue="0.89322313791106467" alpha="1" colorSpace="calibratedRGB"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rdf-U6-p2i">
-                                <rect key="frame" x="276" y="396" width="51" height="31"/>
+                                <rect key="frame" x="183" y="390" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.59754865260000001" blue="0.89322313789999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="thumbTintColor" red="0.0" green="0.17886844499999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -36,14 +36,24 @@
                                 </connections>
                             </switch>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GTE-GS-8zb">
-                                <rect key="frame" x="241" y="170" width="118" height="31"/>
+                                <rect key="frame" x="148" y="175" width="118" height="31"/>
                                 <connections>
                                     <action selector="changeColorSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="x2t-Ok-Kzo"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4u-7Y-qDZ">
+                                <rect key="frame" x="178" y="488" width="59" height="30"/>
+                                <state key="normal" title="Random"/>
+                                <connections>
+                                    <action selector="randomColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zIU-X5-4Hr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.81404657888701359" green="0.81494591074828171" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
